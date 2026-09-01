@@ -1,0 +1,86 @@
+{
+  "site": {
+    "name": "Uzm. Psk. Deniz Ornek",
+    "title": "Uzman Klinik Psikolog",
+    "email": "ornek@psychofolio.com",
+    "address": "Istanbul, Turkiye",
+    "copyright": "Tum haklari saklidir."
+  },
+  "home": {
+    "badge": "ATELIER PSYKHE",
+    "headline": "Derinliklere",
+    "headlineAccent": "cesaretle",
+    "headlineSuffix": "inin.",
+    "description": "Psikodinamik ve psikanalitik yonelimli calismalarda, bilincdisi sureclerinizi anlamlandirmaniza eslik ediyorum.",
+    "cta": "Iletisime Gecin",
+    "cardTitle": "Ic Dunyanin Haritasi",
+    "cardSubtitle": "Psikodinamik Terapi",
+    "quote": "Bilinmeyen bilineni tanimak, ozgurluge giden ilk adimdir.",
+    "quoteAuthor": "Carl Gustav Jung"
+  },
+  "services": [
+    {
+      "title": "Psikodinamik Psikoterapi",
+      "desc": "Bilincdisi catismalar, erken donem iliskisel oruntuler ve tekrarlayan yasam temalarinin derinlemesine calisildigi uzun sureli terapi.",
+      "duration": "50 dk",
+      "method": "Yuzyuze"
+    },
+    {
+      "title": "Psikanalitik Yonelimli Danismanlik",
+      "desc": "Mevcut yasam zorluklarini psikodinamik cercevede anlamlandirmaya odaklanan, yapilandirilmis gorusmeler.",
+      "duration": "50 dk",
+      "method": "Yuzyuze / Cevrimici"
+    },
+    {
+      "title": "Ruyalar ve Sembolik Calisma",
+      "desc": "Ruya analizleri, serbest cagrisim ve sembolik materyal uzerinden ic dunyanin kesfedilmesi.",
+      "duration": "50 dk",
+      "method": "Yuzyuze"
+    },
+    {
+      "title": "Bireysel Terapi",
+      "desc": "Kaygi, depresyon ve iliskisel zorluklar icin bireyin ic dunyasina odaklanan butunleyici terapi sureci.",
+      "duration": "50 dk",
+      "method": "Yuzyuze / Cevrimici"
+    }
+  ],
+  "about": {
+    "title": "Hakkimda",
+    "intro": "Psikodinamik ve psikanalitik yonelimle calisan bir klinik psikolog olarak, danisanlarimin ic dunyalarini anlamlandirma yolculuklarina eslik ediyorum.",
+    "credentials": [
+      { "year": "\u2014", "title": "Lisans Egitimi", "detail": "Psikoloji alaninda lisans derecesi" },
+      { "year": "\u2014", "title": "Yuksek Lisans", "detail": "Klinik psikoloji alaninda uzmanlik" },
+      { "year": "\u2014", "title": "Psikodinamik Psikoterapi Egitimi", "detail": "Psikodinamik yonelimde ileri duzey terapi egitimi" }
+    ]
+  },
+  "approach": {
+    "title": "Terapi Yaklasimim",
+    "intro": "Terapide amacim, bilincdisi sureclerinizi guvenli bir alanda kesfetmenize ve kendinizle daha derin bir iliskiye kavusmaniza yardimci olmaktir.",
+    "principles": [
+      { "title": "Bilincdisi Sureclere Dikkat", "desc": "Gundelik yasamin ardindaki bilincdisi motifleri, catismalari ve tekrarlayan orunuleri birlikte kesfediyoruz." },
+      { "title": "Terapotik Iliski", "desc": "Terapi iliskisinin kendisi, degisimin en guclu aracidir. Guvenli ve tutarli bir iliski zemini olusturuyorum." },
+      { "title": "Derinlemesine Anlama", "desc": "Belirtilerin altinda yatan duygusal koklere iniyoruz. Yuzeysel cozumler yerine kalici icegoruleri hedefliyoruz." },
+      { "title": "Bireysel Tempo", "desc": "Her danisanin kendi ic ritmini ve hazir olma duzeyini saygiyla karsiliyorum." }
+    ]
+  },
+  "articles": [
+    { "title": "Bilincdisi Nedir ve Terapi Surecinde Nasil Calisilir?", "category": "Psikodinamik", "readTime": "10 dk", "date": "Ornek tarih" },
+    { "title": "Aktarim ve Karsit Aktarim: Terapotik Iliskinin Aynasi", "category": "Psikanaliz", "readTime": "8 dk", "date": "Ornek tarih" },
+    { "title": "Ruyalar Ne Anlatir? Sembolik Dilin Terapideki Yeri", "category": "Ruya Analizi", "readTime": "7 dk", "date": "Ornek tarih" },
+    { "title": "Tekrarlayan Iliskisel Oruntuler ve Degisim", "category": "Iliski", "readTime": "9 dk", "date": "Ornek tarih" }
+  ],
+  "faq": [
+    { "q": "Psikodinamik terapi ne kadar surer?", "a": "Psikodinamik terapi genellikle uzun sureli bir surecdir. Sure, calisiilan konularin derinligine ve bireysel ihtiyaclara gore degisir." },
+    { "q": "Terapi seanslarinda ne yapilir?", "a": "Seanslarda serbest cagrisim, duygu ve dusuncelerin arastirilmasi, ruyalar ve gecmis deneyimler uzerinde calisilir." },
+    { "q": "Psikodinamik terapi kimler icin uygundur?", "a": "Kendini daha iyi tanimak isteyen, tekrarlayan iliskisel zorluklar yasayan ve duygusal derinlesme arayan herkes icin uygundur." },
+    { "q": "Seans ucreti ne kadar?", "a": "Seans bilgisi icin iletisime gecin." }
+  ],
+  "contact": {
+    "title": "Iletisim",
+    "intro": "Ic dunyanizi kesfetmek icin guvenli bir alan ariyorsaniz, birlikte yola cikabiliriz.",
+    "formName": "Adiniz",
+    "formEmail": "E-posta",
+    "formMessage": "Mesajiniz",
+    "formSubmit": "Gonder"
+  }
+}
