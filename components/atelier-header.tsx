@@ -5,15 +5,15 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 const leftLinks = [
-  { label: "Hakkinda", path: "/hakkimda" },
+  { label: "Hakkında", path: "/hakkimda" },
   { label: "Hizmetler", path: "/hizmetler" },
-  { label: "Yaklasim", path: "/yaklasim" },
+  { label: "Yaklaşım", path: "/yaklasim" },
 ] as const;
 
 const rightLinks = [
-  { label: "Yazilar", path: "/yazilar" },
+  { label: "Makaleler", path: "/yazilar" },
   { label: "SSS", path: "/sss" },
-  { label: "Iletisim", path: "/iletisim" },
+  { label: "İletişim", path: "/iletisim" },
 ] as const;
 
 const allLinks = [
@@ -98,7 +98,7 @@ export function AtelierHeader({ siteName = "Atelier Psykhe", siteTitle = "psikan
           {/* Left links */}
           <nav
             className="hidden items-center gap-8 lg:flex"
-            aria-label="Site menusu sol"
+            aria-label="Site menüsü sol"
           >
             {leftLinks.map((l) => (
               <NavLink
@@ -113,7 +113,7 @@ export function AtelierHeader({ siteName = "Atelier Psykhe", siteTitle = "psikan
           <button
             className="flex h-9 w-9 flex-col items-start justify-center gap-1.5 lg:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? "Menuyu kapat" : "Menuyu ac"}
+            aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
             aria-expanded={menuOpen}
           >
             <span
@@ -145,7 +145,7 @@ export function AtelierHeader({ siteName = "Atelier Psykhe", siteTitle = "psikan
           <div className="hidden items-center justify-end gap-8 lg:flex">
             <nav
               className="flex items-center gap-8"
-              aria-label="Site menusu sag"
+              aria-label="Site menüsü sağ"
             >
               {rightLinks.map((l) => (
                 <NavLink

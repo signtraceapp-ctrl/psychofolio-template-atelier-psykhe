@@ -106,7 +106,7 @@ export function PageShell({
 
       <footer className="border-t border-[#d4af37]/8 py-12 text-center">
         <p className="text-[8px] font-light uppercase tracking-[0.5em] text-[#e8e0d0]/20">
-          {siteName || "atelier psykhe"} - {siteTitle || "psikanalitik psikoterapi"}
+          {siteName || "Atelier Psykhe"} - {siteTitle || "psikanalitik psikoterapi"}
         </p>
       </footer>
     </div>

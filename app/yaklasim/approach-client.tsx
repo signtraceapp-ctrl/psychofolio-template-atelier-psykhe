@@ -43,8 +43,8 @@ export function ApproachClient({ content: c }: { content: SiteContent }) {
   return (
     <PageShell
       scopeRef={scopeRef}
-      eyebrow="yontem"
-      titleLines={["Mermer nasil", "konusur?"]}
+      eyebrow="yöntem"
+      titleLines={["Mermer nasıl", "konuşur?"]}
       siteName={c.site.name}
       siteTitle={c.site.title}
     >
@@ -126,11 +126,11 @@ export function ApproachClient({ content: c }: { content: SiteContent }) {
           >
             <span className="absolute -top-px left-8 right-8 h-px bg-[#0a0a0a]" aria-hidden="true" />
             <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-[#0a0a0a] px-4 text-[8px] uppercase tracking-[0.5em] text-[#d4af37]/40">
-              atolye ilkesi
+              atölye ilkesi
             </span>
             <p className="font-serif text-xl font-light italic leading-[1.9] text-[#e8e0d0]/60">
-              &ldquo;Yorum bir keski degil, bir el feneridir. Mermeri biz
-              yontmayiz, danisan kendi formunu gorur.&rdquo;
+              &ldquo;Yorum bir keski değil, bir el feneridir. Mermeri biz
+              yontmayız, danışan kendi formunu görür.&rdquo;
             </p>
           </div>
         </div>

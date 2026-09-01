@@ -18,7 +18,7 @@ const cormorant = Cormorant({
 export function generateMetadata(): Metadata {
   return {
     title: { default: "Atelier Psykhe - Psikanalitik Psikoterapi", template: "%s | Atelier Psykhe" },
-    description: "Psikanalitik ve psikodinamik yonelimli psikoterapi pratiği.",
+    description: "Psikanalitik ve psikodinamik yönelimli psikoterapi pratiği.",
     robots: { index: false, follow: false },
   };
 }

@@ -10,8 +10,8 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
   return (
     <PageShell
       scopeRef={scopeRef}
-      eyebrow="arsiv"
-      titleLines={["Yazi", "katalogu."]}
+      eyebrow="arşiv"
+      titleLines={["Yazı", "kataloğu."]}
       siteName={c.site.name}
       siteTitle={c.site.title}
     >
@@ -25,7 +25,7 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
             >
               <div className="flex items-baseline justify-between gap-6">
                 <p className="text-[8px] font-light uppercase tracking-[0.5em] text-[#d4af37]/50">
-                  one cikan - {featured.category}
+                  öne çıkan - {featured.category}
                 </p>
                 <p className="text-[9px] font-light uppercase tracking-[0.3em] text-[#e8e0d0]/25">
                   {featured.date || featured.readTime}
@@ -34,8 +34,13 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
               <h2 className="mt-6 font-serif text-2xl font-light italic leading-[1.35] text-[#e8e0d0]/90 transition-colors duration-700 group-hover:text-[#d4af37] sm:text-3xl md:text-4xl">
                 {featured.title}
               </h2>
+              {featured.excerpt && (
+                <p className="mt-5 max-w-xl text-sm font-light leading-[2] text-[#e8e0d0]/40">
+                  {featured.excerpt}
+                </p>
+              )}
               <p className="mt-8 text-[9px] font-light uppercase tracking-[0.4em] text-[#d4af37]/60">
-                Okumaya basla &rarr;
+                Okumaya başla &rarr;
               </p>
             </article>
           </div>
@@ -62,6 +67,11 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
                         {a.title}
                       </h3>
                     </div>
+                    {a.excerpt && (
+                      <p className="mt-2 hidden max-w-lg text-xs font-light leading-[1.9] text-[#e8e0d0]/30 sm:block">
+                        {a.excerpt}
+                      </p>
+                    )}
                     <div className="mt-3 flex gap-6 text-[8px] font-light uppercase tracking-[0.4em] text-[#d4af37]/35">
                       <span>{a.category}</span>
                       <span className="text-[#e8e0d0]/20">{a.date || a.readTime}</span>
@@ -81,7 +91,7 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
               data-reveal
               className="mt-14 text-center text-[9px] font-light uppercase tracking-[0.4em] text-[#e8e0d0]/20"
             >
-              arsivin tamami yakinda dijital koleksiyonda
+              arşivin tamamı yakında dijital koleksiyonda
             </p>
           </div>
         </div>

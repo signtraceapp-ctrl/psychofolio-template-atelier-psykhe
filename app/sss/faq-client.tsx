@@ -12,7 +12,7 @@ export function FaqClient({ content: c }: { content: SiteContent }) {
     <PageShell
       scopeRef={scopeRef}
       eyebrow="soru defteri"
-      titleLines={["Sormasi", "en zor sorular."]}
+      titleLines={["Sorması", "en zor sorular."]}
       siteName={c.site.name}
       siteTitle={c.site.title}
     >
@@ -71,8 +71,8 @@ export function FaqClient({ content: c }: { content: SiteContent }) {
               className="mt-14 text-center text-xs font-light italic text-[#e8e0d0]/30"
             >
               Sorunuz burada yoksa{" "}
-              <a href="/iletisim" className="text-[#d4af37]/70 hover:text-[#d4af37]">iletisim sayfasindan</a>{" "}
-              cekinmeden yazin.
+              <a href="/iletisim" className="text-[#d4af37]/70 hover:text-[#d4af37]">iletişim sayfasından</a>{" "}
+              çekinmeden yazın.
             </p>
           </div>
         </div>

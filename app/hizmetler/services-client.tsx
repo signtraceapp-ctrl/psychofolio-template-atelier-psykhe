@@ -13,8 +13,8 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
   return (
     <PageShell
       scopeRef={scopeRef}
-      eyebrow="sergi salonlari"
-      titleLines={["Dort salon,", "dort ayri sessizlik."]}
+      eyebrow="sergi salonları"
+      titleLines={["Dört salon,", "dört ayrı sessizlik."]}
       siteName={c.site.name}
       siteTitle={c.site.title}
     >
@@ -101,7 +101,7 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
               data-reveal
               className="mt-14 text-center text-[9px] font-light uppercase tracking-[0.4em] text-[#e8e0d0]/20"
             >
-              tum salonlar randevu ile gezilir
+              tüm salonlar randevu ile gezilir
             </p>
           </div>
         </div>

@@ -12,8 +12,8 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
   return (
     <PageShell
       scopeRef={scopeRef}
-      eyebrow="iletisim"
-      titleLines={["Atolyeye", "yazin."]}
+      eyebrow="iletişim"
+      titleLines={["Atölyeye", "yazın."]}
       siteName={c.site.name}
       siteTitle={c.site.title}
     >
@@ -29,9 +29,9 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
               <div className="space-y-6 border-l border-[#d4af37]/15 pl-6">
                 {[
                   { icon: Mail, label: "e-posta", value: c.site.email },
-                  { icon: Phone, label: "telefon", value: "+90 212 000 00 00" },
+                  { icon: Phone, label: "telefon", value: c.site.phone },
                   { icon: MapPin, label: "adres", value: c.site.address },
-                  { icon: Clock, label: "gorusme saatleri", value: "Hafta ici 10.00 - 19.00" },
+                  { icon: Clock, label: "görüşme saatleri", value: c.site.hours },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <item.icon
@@ -51,9 +51,9 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
               </div>
 
               <p className="text-[10px] font-light leading-[1.9] text-[#e8e0d0]/25">
-                Acil bir kriz durumundaysaniz lutfen 112&apos;yi arayin ya da en
-                yakin acil servise basvurun; bu form acil mudahale icin uygun
-                degildir.
+                Acil bir kriz durumundaysanız lütfen 112&apos;yi arayın ya da en
+                yakın acil servise başvurun; bu form acil müdahale için uygun
+                değildir.
               </p>
             </div>
 
@@ -63,10 +63,10 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                 <div className="flex h-full min-h-[320px] flex-col items-center justify-center border border-[#d4af37]/20 p-10 text-center">
                   <span className="font-serif text-4xl italic text-[#d4af37]/70">&#10035;</span>
                   <p className="mt-6 font-serif text-xl font-light italic text-[#e8e0d0]/80">
-                    Mesajiniz atolyeye ulasti.
+                    Mesajınız atölyeye ulaştı.
                   </p>
                   <p className="mt-3 text-xs font-light leading-[1.9] text-[#e8e0d0]/35">
-                    En gec iki is gunu icinde size donus yapilacak.
+                    En geç iki iş günü içinde size dönüş yapılacak.
                   </p>
                 </div>
               ) : (
@@ -78,9 +78,9 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                   }}
                 >
                   {[
-                    { id: "ad", label: c.contact.formName || "Adiniz Soyadiniz", type: "text" },
+                    { id: "ad", label: c.contact.formName || "Adınız Soyadınız", type: "text" },
                     { id: "eposta", label: c.contact.formEmail || "E-posta adresiniz", type: "email" },
-                    { id: "konu", label: "Gorusme konusu (istege bagli)", type: "text" },
+                    { id: "konu", label: c.contact.formSubject || "Görüşme konusu (isteğe bağlı)", type: "text" },
                   ].map((f) => (
                     <div key={f.id} className="group relative">
                       <input
@@ -111,7 +111,7 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                       htmlFor="mesaj"
                       className="pointer-events-none absolute left-0 top-3.5 text-sm font-light text-[#e8e0d0]/30 transition-[top,font-size,letter-spacing,color] duration-300 peer-focus:-top-3 peer-focus:text-[9px] peer-focus:uppercase peer-focus:tracking-[0.3em] peer-focus:text-[#d4af37]/60 peer-[:not(:placeholder-shown)]:-top-3 peer-[:not(:placeholder-shown)]:text-[9px] peer-[:not(:placeholder-shown)]:uppercase peer-[:not(:placeholder-shown)]:tracking-[0.3em] peer-[:not(:placeholder-shown)]:text-[#d4af37]/60"
                     >
-                      {c.contact.formMessage || "Mesajiniz"}
+                      {c.contact.formMessage || "Mesajınız"}
                     </label>
                   </div>
 
@@ -120,7 +120,7 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                       type="submit"
                       className="border border-[#d4af37]/50 px-12 py-4 text-[9px] font-light uppercase tracking-[0.4em] text-[#d4af37] transition-[background-color,color] duration-300 hover:bg-[#d4af37] hover:text-[#0a0a0a]"
                     >
-                      {c.contact.formSubmit || "Mesaji Gonder"}
+                      {c.contact.formSubmit || "Mesajı Gönder"}
                     </button>
                   </div>
                 </form>

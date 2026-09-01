@@ -15,34 +15,34 @@ if (typeof window !== "undefined") {
 const sculptingPhases = [
   {
     num: "I",
-    title: "Ilk Catlak",
+    title: "İlk Çatlak",
     subtitle: "ilk seans",
     description:
-      "Mermer blok ilk kez kirilir. Terapist ve danisan arasindaki guvene dayali ilk temas. Yuzeyin altindaki form henuz belirsizdir, ama cesaret edilmistir.",
+      "Mermer blok ilk kez kırılır. Terapist ve danışan arasındaki güvene dayalı ilk temas. Yüzeyin altındaki form henüz belirsizdir, ama cesaret edilmiştir.",
     isEntrance: true,
   },
   {
     num: "II",
     title: "Kaba Yontu",
-    subtitle: "derin calisma",
+    subtitle: "derin çalışma",
     description:
-      "Fazlaliklar uzaklasir. Bilincdisi kaliplar, savunma mekanizmalari ve tekrarlayan oruntuler ortaya cikar. Heykeltirasin eli kararlidir.",
+      "Fazlalıklar uzaklaşır. Bilinçdışı kalıplar, savunma mekanizmaları ve tekrarlayan örüntüler ortaya çıkar. Heykeltıraşın eli kararlıdır.",
   },
   {
     num: "III",
     title: "Cila",
     subtitle: "entegrasyon",
     description:
-      "Icgoruler yasama entegre edilir. Danisan kendi formunu kesfeder ve onu sahiplenir. Mermer artik isik tutar.",
+      "İçgörüler yaşama entegre edilir. Danışan kendi formunu keşfeder ve onu sahiplenir. Mermer artık ışık tutar.",
     isFinal: true,
   },
 ] as const;
 
 const metrics = [
-  { val: "12+", label: "Yil Klinik Deneyim" },
-  { val: "4500+", label: "Tamamlanmis Seans" },
-  { val: "8+", label: "Akademik Yayin" },
-  { val: "%100", label: "Etik Taahhut" },
+  { val: "12+", label: "Yıl Klinik Deneyim" },
+  { val: "4500+", label: "Tamamlanmış Seans" },
+  { val: "8+", label: "Akademik Yayın" },
+  { val: "%100", label: "Etik Taahhüt" },
 ];
 
 /* -- Main Component ------------------------------------------------------- */
@@ -122,7 +122,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
         ref={sectionRef}
         className="relative z-10"
         style={{ height: "400vh" }}
-        aria-label="Heykel galerisi yolculugu"
+        aria-label="Heykel galerisi yolculuğu"
       >
         <div ref={pinRef} className="relative h-screen w-full overflow-hidden">
           {/* Left readability gradient */}
@@ -151,10 +151,10 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                   <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-light tracking-tight text-[#e8e0d0]/90 leading-[1.1] italic">
                     {c.home.headline}
                     <br />
+                    {c.home.headlineSuffix}{" "}
                     <span className="text-[#d4af37] not-italic font-normal">
                       {c.home.headlineAccent}
-                    </span>{" "}
-                    {c.home.headlineSuffix}
+                    </span>
                   </h1>
                   <p className="mt-8 max-w-md text-sm leading-[2] text-[#e8e0d0]/40 font-light">
                     {c.home.description}
@@ -273,7 +273,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
           >
             <div className="flex flex-col items-center gap-3 text-[#d4af37]/40">
               <span className="text-[8px] uppercase tracking-[0.5em]">
-                Asagi kaydir
+                Aşağı kaydır
               </span>
               <div className="h-10 w-px animate-pulse bg-gradient-to-b from-[#d4af37]/40 to-transparent" />
             </div>
@@ -287,7 +287,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
           <div className="mx-auto max-w-3xl space-y-20" data-reveal>
             <div className="text-center space-y-4">
               <p className="text-[8px] tracking-[0.6em] uppercase text-[#d4af37]/40 font-light">
-                terapi katalogu
+                terapi kataloğu
               </p>
               <h2 className="font-serif text-3xl md:text-4xl italic font-light text-[#e8e0d0]/70 tracking-tight">
                 Hizmetler
@@ -372,23 +372,23 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-xl text-center space-y-8" data-reveal>
             <p className="text-[8px] tracking-[0.6em] uppercase text-[#d4af37]/40 font-light">
-              basvuru
+              başvuru
             </p>
             <h2 className="font-serif text-3xl md:text-4xl italic font-light text-[#e8e0d0]/70 tracking-tight">
-              Sureci Baslatmaya
+              Süreci Başlatmaya
               <br />
-              Hazir misiniz?
+              Hazır mısınız?
             </h2>
             <p className="text-xs text-[#e8e0d0]/30 leading-[2] font-light max-w-sm mx-auto">
-              Ilk gorusme, birbirimizi taniyacagimiz ve ihtiyaclarinizi
-              birlikte degerlendirdigimiz bir on degerlendirme seansidir.
+              İlk görüşme, birbirimizi tanıyacağımız ve ihtiyaçlarınızı
+              birlikte değerlendirdiğimiz bir ön değerlendirme seansıdır.
             </p>
             <div className="pt-4">
               <a
                 href="/iletisim"
                 className="inline-block rounded-none px-14 py-4 text-[9px] font-light uppercase tracking-[0.4em] bg-[#d4af37]/90 text-[#0a0a0a] hover:bg-[#d4af37] border-0 transition-[background-color] duration-300"
               >
-                On Gorusme Talep Et
+                Ön Görüşme Talep Et
               </a>
             </div>
           </div>
@@ -403,10 +403,10 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
             data-reveal
           >
             {[
-              "TPD UYELIGI",
-              "PSIKANALIZ DERNEGI",
-              "ISST AKREDITASYON",
-              "PSIKANALIST SERTIFIKA",
+              "TPD ÜYELİĞİ",
+              "PSİKANALİZ DERNEĞİ",
+              "ISST AKREDİTASYON",
+              "PSİKANALİST SERTİFİKA",
             ].map((label, i) => (
               <span
                 key={i}

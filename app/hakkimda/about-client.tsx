@@ -4,11 +4,11 @@ import { PageShell, useAtelierReveal } from "@/components/page-shell";
 import type { SiteContent } from "@/lib/content";
 
 const timeline = [
-  { year: "2012", title: "Psikoloji Lisansi", detail: "Klinik psikolojiye ilk adim, insan zihnine duyulan merakin resmiyet kazanmasi." },
-  { year: "2015", title: "Klinik Psikoloji Yuksek Lisansi", detail: "Psikanalitik kuram uzerine tez calismasi ve ilk supervizyonlu vakalar." },
-  { year: "2018", title: "Psikanalitik Psikoterapi Formasyonu", detail: "Dort yillik kuramsal egitim, kisisel analiz ve yogun supervizyon sureci." },
-  { year: "2021", title: "Ozel Pratik: Atolyenin Kurulusu", detail: "Kendi kliniginde bireysel ve cift terapisi calismalarinin baslamasi." },
-  { year: "2024", title: "Supervizor & Egitmen", detail: "Genc klinisyenlere supervizyon; meslek ici egitim ve seminerler." },
+  { year: "2012", title: "Psikoloji Lisansı", detail: "Klinik psikolojiye ilk adım, insan zihnine duyulan merakın resmiyet kazanması." },
+  { year: "2015", title: "Klinik Psikoloji Yüksek Lisansı", detail: "Psikanalitik kuram üzerine tez çalışması ve ilk süpervizyonlu vakalar." },
+  { year: "2018", title: "Psikanalitik Psikoterapi Formasyonu", detail: "Dört yıllık kuramsal eğitim, kişisel analiz ve yoğun süpervizyon süreci." },
+  { year: "2021", title: "Özel Pratik: Atölyenin Kuruluşu", detail: "Kendi kliniğinde bireysel ve çift terapisi çalışmalarının başlaması." },
+  { year: "2024", title: "Süpervizör & Eğitmen", detail: "Genç klinisyenlere süpervizyon; meslek içi eğitim ve seminerler." },
 ];
 
 export function AboutClient({ content: c }: { content: SiteContent }) {
@@ -18,7 +18,7 @@ export function AboutClient({ content: c }: { content: SiteContent }) {
     <PageShell
       scopeRef={scopeRef}
       eyebrow="biyografi"
-      titleLines={["Heykeltirasin", "hikayesi."]}
+      titleLines={["Heykeltıraşın", "hikayesi."]}
       siteName={c.site.name}
       siteTitle={c.site.title}
     >
