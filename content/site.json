@@ -1,9 +1,9 @@
 {
   "site": {
-    "name": "Uzm. Psk. Deniz Ornek",
-    "title": "Uzman Klinik Psikolog",
-    "email": "ornek@psychofolio.com",
-    "address": "Istanbul, Turkiye",
+    "name": "Ad Soyad",
+    "title": "Unvan",
+    "email": "iletisim@siteniz.com",
+    "address": "Sehir, Turkiye",
     "copyright": "Tum haklari saklidir."
   },
   "home": {
@@ -48,32 +48,88 @@
     "title": "Hakkimda",
     "intro": "Psikodinamik ve psikanalitik yonelimle calisan bir klinik psikolog olarak, danisanlarimin ic dunyalarini anlamlandirma yolculuklarina eslik ediyorum.",
     "credentials": [
-      { "year": "\u2014", "title": "Lisans Egitimi", "detail": "Psikoloji alaninda lisans derecesi" },
-      { "year": "\u2014", "title": "Yuksek Lisans", "detail": "Klinik psikoloji alaninda uzmanlik" },
-      { "year": "\u2014", "title": "Psikodinamik Psikoterapi Egitimi", "detail": "Psikodinamik yonelimde ileri duzey terapi egitimi" }
+      {
+        "year": "—",
+        "title": "Lisans Egitimi",
+        "detail": "Psikoloji alaninda lisans derecesi"
+      },
+      {
+        "year": "—",
+        "title": "Yuksek Lisans",
+        "detail": "Klinik psikoloji alaninda uzmanlik"
+      },
+      {
+        "year": "—",
+        "title": "Psikodinamik Psikoterapi Egitimi",
+        "detail": "Psikodinamik yonelimde ileri duzey terapi egitimi"
+      }
     ]
   },
   "approach": {
     "title": "Terapi Yaklasimim",
     "intro": "Terapide amacim, bilincdisi sureclerinizi guvenli bir alanda kesfetmenize ve kendinizle daha derin bir iliskiye kavusmaniza yardimci olmaktir.",
     "principles": [
-      { "title": "Bilincdisi Sureclere Dikkat", "desc": "Gundelik yasamin ardindaki bilincdisi motifleri, catismalari ve tekrarlayan orunuleri birlikte kesfediyoruz." },
-      { "title": "Terapotik Iliski", "desc": "Terapi iliskisinin kendisi, degisimin en guclu aracidir. Guvenli ve tutarli bir iliski zemini olusturuyorum." },
-      { "title": "Derinlemesine Anlama", "desc": "Belirtilerin altinda yatan duygusal koklere iniyoruz. Yuzeysel cozumler yerine kalici icegoruleri hedefliyoruz." },
-      { "title": "Bireysel Tempo", "desc": "Her danisanin kendi ic ritmini ve hazir olma duzeyini saygiyla karsiliyorum." }
+      {
+        "title": "Bilincdisi Sureclere Dikkat",
+        "desc": "Gundelik yasamin ardindaki bilincdisi motifleri, catismalari ve tekrarlayan orunuleri birlikte kesfediyoruz."
+      },
+      {
+        "title": "Terapotik Iliski",
+        "desc": "Terapi iliskisinin kendisi, degisimin en guclu aracidir. Guvenli ve tutarli bir iliski zemini olusturuyorum."
+      },
+      {
+        "title": "Derinlemesine Anlama",
+        "desc": "Belirtilerin altinda yatan duygusal koklere iniyoruz. Yuzeysel cozumler yerine kalici icegoruleri hedefliyoruz."
+      },
+      {
+        "title": "Bireysel Tempo",
+        "desc": "Her danisanin kendi ic ritmini ve hazir olma duzeyini saygiyla karsiliyorum."
+      }
     ]
   },
   "articles": [
-    { "title": "Bilincdisi Nedir ve Terapi Surecinde Nasil Calisilir?", "category": "Psikodinamik", "readTime": "10 dk", "date": "Ornek tarih" },
-    { "title": "Aktarim ve Karsit Aktarim: Terapotik Iliskinin Aynasi", "category": "Psikanaliz", "readTime": "8 dk", "date": "Ornek tarih" },
-    { "title": "Ruyalar Ne Anlatir? Sembolik Dilin Terapideki Yeri", "category": "Ruya Analizi", "readTime": "7 dk", "date": "Ornek tarih" },
-    { "title": "Tekrarlayan Iliskisel Oruntuler ve Degisim", "category": "Iliski", "readTime": "9 dk", "date": "Ornek tarih" }
+    {
+      "title": "Bilincdisi Nedir ve Terapi Surecinde Nasil Calisilir?",
+      "category": "Psikodinamik",
+      "readTime": "10 dk",
+      "date": ""
+    },
+    {
+      "title": "Aktarim ve Karsit Aktarim: Terapotik Iliskinin Aynasi",
+      "category": "Psikanaliz",
+      "readTime": "8 dk",
+      "date": ""
+    },
+    {
+      "title": "Ruyalar Ne Anlatir? Sembolik Dilin Terapideki Yeri",
+      "category": "Ruya Analizi",
+      "readTime": "7 dk",
+      "date": ""
+    },
+    {
+      "title": "Tekrarlayan Iliskisel Oruntuler ve Degisim",
+      "category": "Iliski",
+      "readTime": "9 dk",
+      "date": ""
+    }
   ],
   "faq": [
-    { "q": "Psikodinamik terapi ne kadar surer?", "a": "Psikodinamik terapi genellikle uzun sureli bir surecdir. Sure, calisiilan konularin derinligine ve bireysel ihtiyaclara gore degisir." },
-    { "q": "Terapi seanslarinda ne yapilir?", "a": "Seanslarda serbest cagrisim, duygu ve dusuncelerin arastirilmasi, ruyalar ve gecmis deneyimler uzerinde calisilir." },
-    { "q": "Psikodinamik terapi kimler icin uygundur?", "a": "Kendini daha iyi tanimak isteyen, tekrarlayan iliskisel zorluklar yasayan ve duygusal derinlesme arayan herkes icin uygundur." },
-    { "q": "Seans ucreti ne kadar?", "a": "Seans bilgisi icin iletisime gecin." }
+    {
+      "q": "Psikodinamik terapi ne kadar surer?",
+      "a": "Psikodinamik terapi genellikle uzun sureli bir surecdir. Sure, calisiilan konularin derinligine ve bireysel ihtiyaclara gore degisir."
+    },
+    {
+      "q": "Terapi seanslarinda ne yapilir?",
+      "a": "Seanslarda serbest cagrisim, duygu ve dusuncelerin arastirilmasi, ruyalar ve gecmis deneyimler uzerinde calisilir."
+    },
+    {
+      "q": "Psikodinamik terapi kimler icin uygundur?",
+      "a": "Kendini daha iyi tanimak isteyen, tekrarlayan iliskisel zorluklar yasayan ve duygusal derinlesme arayan herkes icin uygundur."
+    },
+    {
+      "q": "Seans ucreti ne kadar?",
+      "a": "Seans bilgisi icin iletisime gecin."
+    }
   ],
   "contact": {
     "title": "Iletisim",
