@@ -34,6 +34,10 @@ const siteContentInputSchema = z.object({
     .partial()
     .optional(),
 
+  metrics: z
+    .array(z.object({ val: metin, label: metin }))
+    .optional(),
+
   services: z
     .array(
       z.object({
@@ -117,6 +121,7 @@ export interface SiteContent {
     quote: string;
     quoteAuthor: string;
   };
+  metrics: { val: string; label: string }[];
   services: {
     title: string;
     desc: string;
@@ -177,6 +182,12 @@ const DEFAULTS: SiteContent = {
     quote: "Her insan, icinde bir baska formu barindiran bir mermer bloktur.",
     quoteAuthor: "Uzm. Psk. Ornek Psikolog",
   },
+  metrics: [
+    { val: "12+", label: "Yil Klinik Deneyim" },
+    { val: "4500+", label: "Tamamlanmis Seans" },
+    { val: "8+", label: "Akademik Yayin" },
+    { val: "%100", label: "Etik Taahhut" },
+  ],
   services: [
     {
       title: "Bireysel Psikoterapi",
@@ -248,6 +259,10 @@ export function getContent(): SiteContent {
         base = {
           site: birlestir(DEFAULTS.site, g.site),
           home: birlestir(DEFAULTS.home, g.home),
+          metrics:
+            g.metrics && g.metrics.length > 0
+              ? (g.metrics as SiteContent["metrics"])
+              : DEFAULTS.metrics,
           services:
             g.services && g.services.length > 0
               ? (g.services as SiteContent["services"])
@@ -268,6 +283,7 @@ export function getContent(): SiteContent {
         base = {
           site: birlestir(DEFAULTS.site, raw.site),
           home: birlestir(DEFAULTS.home, raw.home),
+          metrics: Array.isArray(raw.metrics) && raw.metrics.length > 0 ? raw.metrics : DEFAULTS.metrics,
           services: Array.isArray(raw.services) && raw.services.length > 0 ? raw.services : DEFAULTS.services,
           about: birlestir(DEFAULTS.about, raw.about),
           approach: birlestir(DEFAULTS.approach, raw.approach),
@@ -292,6 +308,10 @@ export function getContent(): SiteContent {
         base = {
           site: birlestir(base.site, g.site),
           home: birlestir(base.home, g.home),
+          metrics:
+            g.metrics && g.metrics.length > 0
+              ? (g.metrics as SiteContent["metrics"])
+              : base.metrics,
           services:
             g.services && g.services.length > 0
               ? (g.services as SiteContent["services"])
