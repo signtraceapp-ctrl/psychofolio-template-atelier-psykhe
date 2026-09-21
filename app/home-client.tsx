@@ -38,13 +38,6 @@ const sculptingPhases = [
   },
 ] as const;
 
-const metrics = [
-  { val: "12+", label: "Yıl Klinik Deneyim" },
-  { val: "4500+", label: "Tamamlanmış Seans" },
-  { val: "8+", label: "Akademik Yayın" },
-  { val: "%100", label: "Etik Taahhüt" },
-];
-
 /* -- Main Component ------------------------------------------------------- */
 export function HomeClient({ content: c }: { content: SiteContent }) {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -329,7 +322,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
             className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8 max-w-3xl mx-auto"
             data-reveal
           >
-            {metrics.map((m, i) => (
+            {(c.metrics ?? []).map((m, i) => (
               <div key={i} className="text-center space-y-3">
                 <p className="text-3xl font-serif italic text-[#d4af37]/80 font-light">
                   {m.val}
