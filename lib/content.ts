@@ -30,6 +30,7 @@ const siteContentInputSchema = z.object({
       cardSubtitle: metin,
       quote: metin,
       quoteAuthor: metin,
+      credentials: z.array(z.union([metin, z.object({ label: metin, value: metin.optional() })])),
     })
     .partial()
     .optional(),
@@ -120,6 +121,7 @@ export interface SiteContent {
     cardSubtitle: string;
     quote: string;
     quoteAuthor: string;
+    credentials: (string | { label: string; value?: string })[];
   };
   metrics: { val: string; label: string }[];
   services: {
@@ -181,6 +183,7 @@ const DEFAULTS: SiteContent = {
     cardSubtitle: "Psikanalitik Psikoterapi",
     quote: "Her insan, icinde bir baska formu barindiran bir mermer bloktur.",
     quoteAuthor: "Uzm. Psk. Ornek Psikolog",
+    credentials: ["TPD Uyeligi", "Psikanaliz Dernegi", "ISST Akreditasyon", "Psikanalist Sertifika"],
   },
   metrics: [
     { val: "12+", label: "Yil Klinik Deneyim" },
