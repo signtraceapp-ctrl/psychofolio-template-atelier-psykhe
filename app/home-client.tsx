@@ -207,7 +207,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                               href="/iletisim"
                               className="inline-block rounded-none px-10 py-3 text-[9px] font-light uppercase tracking-[0.4em] bg-[#d4af37]/90 text-[#0a0a0a] hover:bg-[#d4af37] border-0 transition-[background-color] duration-300"
                             >
-                              Randevu Al
+                              {c.home.cta || "Randevu Al"}
                             </a>
                             <a
                               href="/hizmetler"
@@ -368,20 +368,17 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
               başvuru
             </p>
             <h2 className="font-serif text-3xl md:text-4xl italic font-light text-[#e8e0d0]/70 tracking-tight">
-              Süreci Başlatmaya
-              <br />
-              Hazır mısınız?
+              {c.contact.title || "Süreci Başlatmaya\nHazır mısınız?"}
             </h2>
             <p className="text-xs text-[#e8e0d0]/30 leading-[2] font-light max-w-sm mx-auto">
-              İlk görüşme, birbirimizi tanıyacağımız ve ihtiyaçlarınızı
-              birlikte değerlendirdiğimiz bir ön değerlendirme seansıdır.
+              {c.contact.intro || "İlk görüşme, birbirimizi tanıyacağımız ve ihtiyaçlarınızı birlikte değerlendirdiğimiz bir ön değerlendirme seansıdır."}
             </p>
             <div className="pt-4">
               <a
                 href="/iletisim"
                 className="inline-block rounded-none px-14 py-4 text-[9px] font-light uppercase tracking-[0.4em] bg-[#d4af37]/90 text-[#0a0a0a] hover:bg-[#d4af37] border-0 transition-[background-color] duration-300"
               >
-                Ön Görüşme Talep Et
+                {c.home.cta || "Ön Görüşme Talep Et"}
               </a>
             </div>
           </div>
@@ -395,12 +392,10 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
             className="flex flex-wrap justify-center gap-10 md:gap-16"
             data-reveal
           >
-            {[
-              "TPD ÜYELİĞİ",
-              "PSİKANALİZ DERNEĞİ",
-              "ISST AKREDİTASYON",
-              "PSİKANALİST SERTİFİKA",
-            ].map((label, i) => (
+            {(c.home.credentials && c.home.credentials.length > 0
+              ? c.home.credentials.map((cr: string | { label: string }) => typeof cr === "string" ? cr : cr.label)
+              : ["TPD ÜYELİĞİ", "PSİKANALİZ DERNEĞİ", "ISST AKREDİTASYON", "PSİKANALİST SERTİFİKA"]
+            ).map((label: string, i: number) => (
               <span
                 key={i}
                 className="text-[7px] tracking-[0.5em] uppercase text-[#e8e0d0]/15 font-light"
